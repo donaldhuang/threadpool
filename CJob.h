@@ -14,6 +14,7 @@ private:
     CThread  *m_pWorkThread;     //The thread associated with the job 
 public: 
     CJob( void ){}
+    //析构函数定义为虚函数，则是在多态的时候，基类的析构是先析构派生类，再析构父类
     virtual ~CJob(){}
     
 //    int      GetJobNo(void) const { return m_JobNo; } 
